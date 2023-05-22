@@ -5,7 +5,12 @@ source ./bash_parameter.sh
 if [ $Target_task = "normal"  -o  $Target_task = "all" ]; then
 
 echo "##########################Build normal index##########################"
-./build/tests/build_memory_index  --data_type ${data_type} --dist_fn ${dist_fn} --data_path ${base_bin_path} --index_path_prefix ${index_path} -R ${R} -L ${L} --alpha ${Alpha}
+echo ${base_bin_path}
+echo ${index_path}
+echo ${L}
+echo ${R}
+echo ${Alpha}
+#./build/tests/build_memory_index  --data_type ${data_type} --dist_fn ${dist_fn} --data_path ${base_bin_path} --index_path_prefix ${index_path} -R ${R} -L ${L} --alpha ${Alpha}
 
 fi
 
