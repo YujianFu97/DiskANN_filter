@@ -84,7 +84,7 @@ int main(int argc, char **argv)
         {
             block_convert_byte(reader, writer, read_buf, write_buf, cblk_size, ndims);
         }
-        std::cout << "Block #" << i << " written" << std::endl;
+        std::cout << "Block #" << i << " / " << nblks << " written" << std::endl;
     }
 
     delete[] read_buf;
