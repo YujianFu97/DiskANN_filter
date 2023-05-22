@@ -1,13 +1,13 @@
 #!/bin/bash
 
-Target_task="stitched" #choose from normal, filtered, stitched, all
+Target_task="normal" #choose from normal, filtered, stitched, all
 
 # Parameter used in normal index
     # Index Construction
     K=100
     data_type=float
     dataset_name=SIFT
-    dataset_size=10K
+    dataset_size=100M
     dist_fn=l2
     R=20
     L=50
@@ -19,7 +19,7 @@ Target_task="stitched" #choose from normal, filtered, stitched, all
 
 # Parameter used in filtered index
     #Index Construction
-    num_points=10000
+    num_points=100000000
     num_label=50
     filter="50 35"
     distribution_type=random
@@ -28,8 +28,10 @@ Target_task="stitched" #choose from normal, filtered, stitched, all
     FilteredLbuild=50
 
 # File path used in normal search
-dataset_path=/home/yujianfu/Desktop/Dataset/
-diskann_path=/home/yujianfu/Desktop/ClusterRepo/DiskANN/
+#dataset_path=/home/yujianfu/Desktop/Dataset/
+#diskann_path=/home/yujianfu/Desktop/ClusterRepo/DiskANN/
+dataset_path=/data/yujian/Dataset/
+diskann_path=/home/yujian/DiskANN_filter/
 
 base_vecs_path=${dataset_path}${dataset_name}/${dataset_name}${dataset_size}/${dataset_name}${dataset_size}_base.fvecs
 base_bin_path=${dataset_path}${dataset_name}/${dataset_name}${dataset_size}/${dataset_name}${dataset_size}_base.bin
