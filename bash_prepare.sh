@@ -9,7 +9,7 @@ echo ${base_bin_path}
 echo ${query_vecs_path}
 echo ${query_bin_path}
 #./build/tests/utils/fvecs_to_bin ${data_type} ${base_vecs_path} ${base_bin_path}
-#./build/tests/utils/fvecs_to_bin ${data_type} ${query_vecs_path} ${query_bin_path}
+./build/tests/utils/fvecs_to_bin ${data_type} ${query_vecs_path} ${query_bin_path}
 
 if [ $Target_task = "normal"  -o  $Target_task = "all" ]; then
 
