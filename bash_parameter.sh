@@ -12,10 +12,11 @@ Target_task="normal" #choose from normal, filtered, stitched, all
     R=20
     L=50
     Alpha=1.2
+    Search_T = 1
 
     # Index Search
     K_query=1
-    L_query="10 20 30 40 50 400"
+    L_query="10 20 30 40 50 60 70 80 90 100"
 
 # Parameter used in filtered index
     #Index Construction
