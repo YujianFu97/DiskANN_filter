@@ -12,7 +12,7 @@ Target_task="normal" #choose from normal, filtered, stitched, all
     R=20
     L=50
     Alpha=1.2
-    Search_T = 1
+    Search_T=1
 
     # Index Search
     K_query=1

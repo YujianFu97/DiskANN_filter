@@ -5,7 +5,7 @@ source ./bash_parameter.sh
 if [ $Target_task = "normal"  -o  $Target_task = "all" ]; then
 
 echo "##########################Search normal index##########################"
-./build/tests/search_memory_index  --data_type ${data_type} --dist_fn ${dist_fn} --index_path_prefix ${index_path} --query_file ${query_bin_path}  --gt_file ${gt_path} -K ${K_query} -L ${L_query} --result_path ${result_path} --T ${Search_T}
+./build/tests/search_memory_index  --data_type ${data_type} --dist_fn ${dist_fn} --index_path_prefix ${index_path} --query_file ${query_bin_path}  --gt_file ${gt_path} -K ${K_query} -L ${L_query} --result_path ${result_path} --num_threads ${Search_T}
 
 fi
 
