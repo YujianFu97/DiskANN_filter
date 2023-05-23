@@ -9,8 +9,8 @@ Target_task="normal" #choose from normal, filtered, stitched, all
     dataset_name=SIFT
     dataset_size=100M
     dist_fn=l2
-    R=20
-    L=50
+    R=64
+    L=100
     Alpha=1.2
     Search_T=1
 
